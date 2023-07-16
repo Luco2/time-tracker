@@ -4,15 +4,15 @@ export class EmployeeTimeTracker {
   constructor() {
     
     // Read employee and timesheet data from JSON file
-    this.employeeData = JSON.parse(fs.readFileSync('./employeeData.json', 'utf8'));
-    this.timesheetData = JSON.parse(fs.readFileSync('./timesheetData.json', 'utf8'));
+    this.employeeData = JSON.parse(fs.readFileSync('./data/employeeData.json', 'utf8'));
+    this.timesheetData = JSON.parse(fs.readFileSync('./data/timesheetData.json', 'utf8'));
   }
 
   saveEmployeeData() {
-    fs.writeFileSync('./employeeData.json', JSON.stringify(this.employeeData, null, 2));
+    fs.writeFileSync('./data/employeeData.json', JSON.stringify(this.employeeData, null, 2));
   }
   saveTimesheetData() {
-    fs.writeFileSync('./timesheetData.json', JSON.stringify(this.timesheetData, null, 2));
+    fs.writeFileSync('./data/timesheetData.json', JSON.stringify(this.timesheetData, null, 2));
   }
 
   // get employee and timesheet 
