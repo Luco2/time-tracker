@@ -1,9 +1,7 @@
 import fs from 'fs';
 
-export class EmployeeTimeTracker {
-  constructor() {
-    
-    // Read employee and timesheet data from JSON file
+export class EmployeeTimeTracker {  
+  constructor() {    
     this.employeeData = JSON.parse(fs.readFileSync('./data/employeeData.json', 'utf8'));
     this.timesheetData = JSON.parse(fs.readFileSync('./data/timesheetData.json', 'utf8'));
   }
@@ -15,7 +13,6 @@ export class EmployeeTimeTracker {
     fs.writeFileSync('./data/timesheetData.json', JSON.stringify(this.timesheetData, null, 2));
   }
 
-  // get employee and timesheet 
   getEmployee(employeeId) {
     const employee = this.employeeData.find((employee) => employee.id === employeeId);
     if (employee) {
@@ -27,12 +24,12 @@ export class EmployeeTimeTracker {
   getTimesheet(employeeId) {
     return this.timesheetData.find((timesheet) => timesheet.employeeId === employeeId);
   }
+
 // employee operations
   clockIn(employeeId) {
     const employee = this.employeeData.find((employee) => employee.id === employeeId);
     if (employee) {
       let timesheet = this.timesheetData.find((timesheet) => timesheet.employeeId === employeeId);
-  
       if (!timesheet) {
         timesheet = {
           employeeId: employeeId,
@@ -40,9 +37,7 @@ export class EmployeeTimeTracker {
         };
         this.timesheetData.push(timesheet);
       }
-
       const hasClockedIn = timesheet.timesheet.some(entry => entry.clockOut === null && entry.lunchClockIn === null);
-  
       if (hasClockedIn) {
         console.log('\nEmployee has already clocked in.');
       } else {
@@ -55,9 +50,7 @@ export class EmployeeTimeTracker {
           lunchClockOut: null
         };
         timesheet.timesheet.push(timesheetEntry);
-  
         console.log('\nClock-in successful.');
-         // Save timesheetData to JSON file
         this.saveTimesheetData();
       }
     } else {
@@ -68,18 +61,15 @@ export class EmployeeTimeTracker {
   clockOut(employeeId) {
     const employee = this.employeeData.find((employee) => employee.id === employeeId);
     if (employee) {
-      const timesheet = this.getTimesheet(employeeId);
-  
+      const timesheet = this.getTimesheet(employeeId); 
       if (timesheet) {
-        // Get the last timesheet entry
         const lastEntry = timesheet.timesheet[timesheet.timesheet.length - 1];
-  
         if (lastEntry.clockOut) {
           console.log('\nEmployee has already clocked out for the day.');
         } else {
           const currentDate = new Date();
           const clockOutTime = currentDate.toLocaleTimeString();
-          lastEntry.clockOut = clockOutTime;
+          lastEntry.clockOut = clockOutTime;  
           console.log('Clock-out successful.');
           this.saveTimesheetData();
         }
@@ -89,8 +79,8 @@ export class EmployeeTimeTracker {
     } else {
       console.log('\nInvalid employee ID. Please try again.');
     }
-  }
-  
+  }  
+
   clockInForLunch(employeeId) {
     const employee = this.getEmployee(employeeId);
     if (employee) {
@@ -168,7 +158,7 @@ viewTimesheet(employeeId) {
     console.log('\nInvalid employee ID. Please try again.');
   }
 }
-
+// added operations
 addEmployee(id, name, role) {
   const newEmployee = {
     id: id,

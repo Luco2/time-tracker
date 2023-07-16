@@ -9,6 +9,7 @@ export class CLI {
     });
   }
 
+  // entry point for CLI
   start() {  
     this.rl.question('Please enter your employee ID: ', (employeeId) => {
       const employee = this.timeTracker.getEmployee(employeeId);
@@ -26,7 +27,7 @@ export class CLI {
   }
 
   employeeMenu(employee) {
-    console.log(`\nWelcome, ${employee.name}!`);
+    console.log(`\nWelcome, ${employee.name}.`);
     console.log('\nEmployee Menu');
     console.log('\n1. Clock In');
     console.log('2. Clock In to Lunch');
@@ -70,6 +71,7 @@ export class CLI {
   }   
   
   managerMenu(manager) {
+    console.log(`\nWelcome, ${manager.name}.`);
     console.log('\nManager Menu');
     console.log('\n1. View Employees');
     console.log('2. View Timesheets');
@@ -160,6 +162,7 @@ export class CLI {
   }
 
   // Employee operations 
+  // update employee data and timesheets
   clockIn(employee) {
     this.timeTracker.clockIn(employee.id);
     this.displayEmployeeMenu(employee);
@@ -213,7 +216,7 @@ export class CLI {
     });
   }   
 
-  // Sign out of the application
+  // uses readline .close to exit the app
   signOut() {
     console.log('Signed out successfully.');
     this.rl.close();

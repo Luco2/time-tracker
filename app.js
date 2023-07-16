@@ -1,5 +1,5 @@
 import { EmployeeTimeTracker } from './EmployeeTimeTracker.js';
-import { CLI } from './cli.js';
+import { CLI } from './Cli.js';
 
 // Create instances 
 const timeTracker = new EmployeeTimeTracker();

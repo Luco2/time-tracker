@@ -22,5 +22,11 @@
     "name": "Arthur Morgan",
     "role": "Employee",
     "isManager": false
+  },
+  {
+    "id": "7",
+    "name": "jon",
+    "role": "employee",
+    "isManager": false
   }
 ]

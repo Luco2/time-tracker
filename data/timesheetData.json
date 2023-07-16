@@ -29,6 +29,34 @@
         "clockOut": "5:57:42 PM",
         "lunchClockIn": "5:57:34 PM",
         "lunchClockOut": "5:57:39 PM"
+      },
+      {
+        "date": "2023-07-16",
+        "clockIn": "1:44:44 PM",
+        "clockOut": "1:45:04 PM",
+        "lunchClockIn": "1:44:48 PM",
+        "lunchClockOut": "1:44:52 PM"
+      },
+      {
+        "date": "2023-07-16",
+        "clockIn": "2:32:39 PM",
+        "clockOut": "2:32:50 PM",
+        "lunchClockIn": "2:32:43 PM",
+        "lunchClockOut": "2:32:46 PM"
+      },
+      {
+        "date": "2023-07-16",
+        "clockIn": "2:36:28 PM",
+        "clockOut": "3:53:21 PM",
+        "lunchClockIn": "3:53:16 PM",
+        "lunchClockOut": "2:36:44 PM"
+      },
+      {
+        "date": "2023-07-16",
+        "clockIn": "4:45:31 PM",
+        "clockOut": "4:45:43 PM",
+        "lunchClockIn": "4:45:34 PM",
+        "lunchClockOut": "4:45:39 PM"
       }
     ]
   },
@@ -48,6 +76,27 @@
         "clockOut": "5:24:44 PM",
         "lunchClockIn": "5:24:45 PM",
         "lunchClockOut": "5:24:49 PM"
+      },
+      {
+        "date": "2023-07-16",
+        "clockIn": "1:43:56 PM",
+        "clockOut": "1:44:04 PM",
+        "lunchClockIn": "1:44:11 PM",
+        "lunchClockOut": "1:44:15 PM"
+      },
+      {
+        "date": "2023-07-16",
+        "clockIn": "2:32:11 PM",
+        "clockOut": "2:32:13 PM",
+        "lunchClockIn": "2:36:10 PM",
+        "lunchClockOut": "2:32:19 PM"
+      },
+      {
+        "date": "2023-07-16",
+        "clockIn": "3:52:54 PM",
+        "clockOut": "3:52:57 PM",
+        "lunchClockIn": "3:53:00 PM",
+        "lunchClockOut": "3:53:01 PM"
       }
     ]
   }
