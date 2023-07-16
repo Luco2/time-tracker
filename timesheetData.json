@@ -1,0 +1,54 @@
+[
+  {
+    "employeeId": "3",
+    "timesheet": [
+      {
+        "date": "2023-07-14",
+        "clockIn": "3:56:05 PM",
+        "clockOut": "3:56:21 PM",
+        "lunchClockIn": "3:56:09 PM",
+        "lunchClockOut": "3:56:10 PM"
+      },
+      {
+        "date": "2023-07-15",
+        "clockIn": "4:26:39 PM",
+        "clockOut": null,
+        "lunchClockIn": "4:28:16 PM",
+        "lunchClockOut": null
+      },
+      {
+        "date": "2023-07-15",
+        "clockIn": "4:39:10 PM",
+        "clockOut": "5:25:48 PM",
+        "lunchClockIn": "5:25:40 PM",
+        "lunchClockOut": "5:25:46 PM"
+      },
+      {
+        "date": "2023-07-15",
+        "clockIn": "5:25:50 PM",
+        "clockOut": "5:57:42 PM",
+        "lunchClockIn": "5:57:34 PM",
+        "lunchClockOut": "5:57:39 PM"
+      }
+    ]
+  },
+  {
+    "employeeId": "1",
+    "timesheet": [
+      {
+        "date": "2023-07-14",
+        "clockIn": "3:57:34 PM",
+        "clockOut": "3:58:07 PM",
+        "lunchClockIn": "3:57:56 PM",
+        "lunchClockOut": "3:58:01 PM"
+      },
+      {
+        "date": "2023-07-15",
+        "clockIn": "3:57:25 PM",
+        "clockOut": "5:24:44 PM",
+        "lunchClockIn": "5:24:45 PM",
+        "lunchClockOut": "5:24:49 PM"
+      }
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name": "Tony Stark",
+    "role": "Manager",
+    "isManager": true
+  },
+  {
+    "id": "2",
+    "name": "Jon Conner",
+    "role": "Manager",
+    "isManager": true
+  },
+  {
+    "id": "3",
+    "name": "Bruce Wayne",
+    "role": "Employee",
+    "isManager": false
+  },
+  {
+    "id": "4",
+    "name": "Arthur Morgan",
+    "role": "Employee",
+    "isManager": false
+  }
+]
