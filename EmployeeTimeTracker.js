@@ -13,6 +13,7 @@ export class EmployeeTimeTracker {
     fs.writeFileSync('./data/timesheetData.json', JSON.stringify(this.timesheetData, null, 2));
   }
 
+// retrieve employee, retreive timesheet necessary for other functions
   getEmployee(employeeId) {
     const employee = this.employeeData.find((employee) => employee.id === employeeId);
     if (employee) {
@@ -132,7 +133,7 @@ export class EmployeeTimeTracker {
     }
   }  
 
-  // manager operations 
+// manager operations 
 viewEmployees() {
   console.log('\nEmployees:');
   this.employeeData.forEach((employee) => {

@@ -78,9 +78,9 @@ export class CLI {
     console.log('3. Add Employee');
     console.log('4. Remove Employee');
     console.log('5. Clock In');
-    console.log('6. Clock Out');
-    console.log('7. Clock In to Lunch');
-    console.log('8. Clock Out of Lunch');
+    console.log('6. Clock In to Lunch');
+    console.log('7. Clock Out of Lunch');
+    console.log('8. Clock Out');
     console.log('9. Sign Out');
     console.log('10. Exit');
 
@@ -119,19 +119,19 @@ export class CLI {
           this.timeTracker.clockIn(manager.id); 
           this.displayManagerMenu(manager);
           break;
-        case '6':
+          case '6':
+            case 'clock in to lunch':
+              this.timeTracker.clockInForLunch(manager.id); 
+              this.displayManagerMenu(manager);
+              break;
+            case '7':
+            case 'clock out of lunch':
+              this.timeTracker.clockOutForLunch(manager.id);
+              this.displayManagerMenu(manager);
+              break;
+        case '8':
         case 'clock out':
           this.timeTracker.clockOut(manager.id); 
-          this.displayManagerMenu(manager);
-          break;
-        case '7':
-        case 'clock in to lunch':
-          this.timeTracker.clockInForLunch(manager.id); 
-          this.displayManagerMenu(manager);
-          break;
-        case '8':
-        case 'clock out of lunch':
-          this.timeTracker.clockOutForLunch(manager.id);
           this.displayManagerMenu(manager);
           break;
         case '9':
@@ -161,8 +161,7 @@ export class CLI {
     });
   }
 
-  // Employee operations 
-  // update employee data and timesheets
+// Employee operations 
   clockIn(employee) {
     this.timeTracker.clockIn(employee.id);
     this.displayEmployeeMenu(employee);
@@ -188,6 +187,7 @@ export class CLI {
     this.viewTimesheet(manager);
   }
 
+// manager operations
   viewTimesheet(manager) {
     this.rl.question('\nPlease enter an employee ID to view their timesheet: ', (employeeId) => {
       this.timeTracker.viewTimesheet(employeeId);
@@ -216,7 +216,6 @@ export class CLI {
     });
   }   
 
-  // uses readline .close to exit the app
   signOut() {
     console.log('Signed out successfully.');
     this.rl.close();

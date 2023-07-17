@@ -7,26 +7,18 @@
   },
   {
     "id": "2",
-    "name": "Jon Conner",
+    "name": "Bruce Wayne",
     "role": "Manager",
     "isManager": true
   },
   {
     "id": "3",
-    "name": "Bruce Wayne",
-    "role": "Employee",
-    "isManager": false
+    "name": "Indiana Jones",
+    "role": "Employee"
   },
   {
     "id": "4",
-    "name": "Arthur Morgan",
-    "role": "Employee",
-    "isManager": false
-  },
-  {
-    "id": "7",
-    "name": "jon",
-    "role": "employee",
-    "isManager": false
+    "name": "Jim Hammond",
+    "role": "Employee"
   }
 ]

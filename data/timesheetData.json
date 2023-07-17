@@ -1,102 +1,81 @@
 [
   {
-    "employeeId": "3",
+    "employeeId": "1",
     "timesheet": [
       {
-        "date": "2023-07-14",
-        "clockIn": "3:56:05 PM",
-        "clockOut": "3:56:21 PM",
-        "lunchClockIn": "3:56:09 PM",
-        "lunchClockOut": "3:56:10 PM"
+        "date": "2023-07-17",
+        "clockIn": "8:09:55 AM",
+        "clockOut": "8:10:06 AM",
+        "lunchClockIn": "8:10:59 AM",
+        "lunchClockOut": "8:11:02 AM"
       },
       {
-        "date": "2023-07-15",
-        "clockIn": "4:26:39 PM",
-        "clockOut": null,
-        "lunchClockIn": "4:28:16 PM",
-        "lunchClockOut": null
+        "date": "2023-07-17",
+        "clockIn": "10:19:36 AM",
+        "clockOut": "10:19:48 AM",
+        "lunchClockIn": "10:19:41 AM",
+        "lunchClockOut": "10:19:45 AM"
       },
       {
-        "date": "2023-07-15",
-        "clockIn": "4:39:10 PM",
-        "clockOut": "5:25:48 PM",
-        "lunchClockIn": "5:25:40 PM",
-        "lunchClockOut": "5:25:46 PM"
+        "date": "2023-07-17",
+        "clockIn": "10:24:08 AM",
+        "clockOut": "10:24:17 AM",
+        "lunchClockIn": "10:24:11 AM",
+        "lunchClockOut": "10:24:13 AM"
       },
       {
-        "date": "2023-07-15",
-        "clockIn": "5:25:50 PM",
-        "clockOut": "5:57:42 PM",
-        "lunchClockIn": "5:57:34 PM",
-        "lunchClockOut": "5:57:39 PM"
+        "date": "2023-07-17",
+        "clockIn": "10:40:58 AM",
+        "clockOut": "10:41:09 AM",
+        "lunchClockIn": "10:41:01 AM",
+        "lunchClockOut": "10:41:05 AM"
       },
       {
-        "date": "2023-07-16",
-        "clockIn": "1:44:44 PM",
-        "clockOut": "1:45:04 PM",
-        "lunchClockIn": "1:44:48 PM",
-        "lunchClockOut": "1:44:52 PM"
-      },
-      {
-        "date": "2023-07-16",
-        "clockIn": "2:32:39 PM",
-        "clockOut": "2:32:50 PM",
-        "lunchClockIn": "2:32:43 PM",
-        "lunchClockOut": "2:32:46 PM"
-      },
-      {
-        "date": "2023-07-16",
-        "clockIn": "2:36:28 PM",
-        "clockOut": "3:53:21 PM",
-        "lunchClockIn": "3:53:16 PM",
-        "lunchClockOut": "2:36:44 PM"
-      },
-      {
-        "date": "2023-07-16",
-        "clockIn": "4:45:31 PM",
-        "clockOut": "4:45:43 PM",
-        "lunchClockIn": "4:45:34 PM",
-        "lunchClockOut": "4:45:39 PM"
+        "date": "2023-07-17",
+        "clockIn": "11:23:33 AM",
+        "clockOut": "11:23:40 AM",
+        "lunchClockIn": "11:23:35 AM",
+        "lunchClockOut": "11:23:38 AM"
       }
     ]
   },
   {
-    "employeeId": "1",
+    "employeeId": "3",
     "timesheet": [
       {
         "date": "2023-07-14",
-        "clockIn": "3:57:34 PM",
-        "clockOut": "3:58:07 PM",
-        "lunchClockIn": "3:57:56 PM",
-        "lunchClockOut": "3:58:01 PM"
+        "clockIn": "8:10:33 AM",
+        "clockOut": "8:10:28 AM",
+        "lunchClockIn": "8:11:23 AM",
+        "lunchClockOut": "8:11:25 AM"
       },
       {
-        "date": "2023-07-15",
-        "clockIn": "3:57:25 PM",
-        "clockOut": "5:24:44 PM",
-        "lunchClockIn": "5:24:45 PM",
-        "lunchClockOut": "5:24:49 PM"
+        "date": "2023-07-17",
+        "clockIn": "10:20:02 AM",
+        "clockOut": "10:20:13 AM",
+        "lunchClockIn": "10:20:05 AM",
+        "lunchClockOut": "10:20:10 AM"
       },
       {
-        "date": "2023-07-16",
-        "clockIn": "1:43:56 PM",
-        "clockOut": "1:44:04 PM",
-        "lunchClockIn": "1:44:11 PM",
-        "lunchClockOut": "1:44:15 PM"
+        "date": "2023-07-17",
+        "clockIn": "10:24:30 AM",
+        "clockOut": "10:24:39 AM",
+        "lunchClockIn": "10:24:32 AM",
+        "lunchClockOut": "10:24:35 AM"
       },
       {
-        "date": "2023-07-16",
-        "clockIn": "2:32:11 PM",
-        "clockOut": "2:32:13 PM",
-        "lunchClockIn": "2:36:10 PM",
-        "lunchClockOut": "2:32:19 PM"
+        "date": "2023-07-17",
+        "clockIn": "10:41:24 AM",
+        "clockOut": "10:41:32 AM",
+        "lunchClockIn": "10:41:26 AM",
+        "lunchClockOut": "10:41:29 AM"
       },
       {
-        "date": "2023-07-16",
-        "clockIn": "3:52:54 PM",
-        "clockOut": "3:52:57 PM",
-        "lunchClockIn": "3:53:00 PM",
-        "lunchClockOut": "3:53:01 PM"
+        "date": "2023-07-17",
+        "clockIn": "11:23:51 AM",
+        "clockOut": "11:23:58 AM",
+        "lunchClockIn": "11:23:53 AM",
+        "lunchClockOut": "11:23:55 AM"
       }
     ]
   }
