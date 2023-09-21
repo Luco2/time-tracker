@@ -38,7 +38,7 @@ Employee Time Tracker is a sophisticated web application crafted to enable emplo
 - **react-router-dom:** For routing and navigation within the application.
 
 ## Installation and Running
-```sh
+
 # Clone this repository
 $ git clone <repository-url>
 
@@ -57,23 +57,29 @@ $ npm start
 ## Components
 
 ### EmployeeMenu
-A dedicated component that offers functionalities and operations that an employee can perform, such as clocking in/out and managing lunch breaks.
+A dedicated component that renders functionalities and operations that an employee can perform, such as clocking in/out and managing lunch breaks.
 
 ### ManagerMenu
-This component is designed to provide managers with a dedicated interface, allowing them to perform various administrative operations such as viewing employee lists and timesheets.
+This component is crafted to offer managers a dedicated interface, allowing them to execute various administrative operations, like viewing employee lists and observing timesheets.
 
 ### LoginForm
-This interactive component facilitates users in logging into the application by entering their employee ID and selecting their role.
+An interactive component designed to facilitate users in logging into the application by entering their employee ID and selecting their role.
 
 ## Backend Logic
-The backend logic for managing employees, their timesheets, and performing various operations is handled by the EmployeeTimeTracker class in the server directory. This class contains methods to manage employees, their clock-in/out times, and timesheets.
+The server-side logic, responsible for managing employees, their timesheets, and executing various operations, is efficiently handled by the `EmployeeTimeTracker` class located in the `server` directory. This class is packed with methods that streamline the management of employees, their clock-in/out times, and meticulously maintain timesheets.
 
 ## Usage
-Login: Start by navigating to the login page and enter your employee ID. Select your role and proceed.
-Navigate: Use the rendered menu to navigate through different options and perform various operations available to your role.
+
+### Login:
+- **Step 1:** Navigate to the login page.
+- **Step 2:** Enter your employee ID.
+- **Step 3:** Select your role and proceed.
+
+### Navigate:
+- Utilize the displayed menu to navigate through different options and execute various operations assigned to your role.
 
 ## Contributing
-We welcome contributions! Please feel free to submit a pull request for minor improvements or bug fixes. For major changes or new features, open an issue first to discuss the proposed change.
+Contributions are wholeheartedly welcomed! Feel free to submit a pull request for minor enhancements or bug fixes. For significant changes or new features, it’s encouraged to open an issue first to discuss the proposed modifications.
 
 ## License
-MIT
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
