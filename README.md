@@ -1,68 +1,79 @@
-# Time Tracker
+# Employee Time Tracker
 
 ## Table of Contents
-1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Installation and Running](#installation-and-running)
-4. [Classes](#classes)
-    - [EmployeeTimeTracker](#employeetimetracker)
-    - [CLI](#cli)
-5. [How to Use](#how-to-use)
+- [Introduction](#introduction)
+- [Features](#features)
+  - [Employee Operations](#employee-operations)
+  - [Manager Operations](#manager-operations)
+- [Technologies Used](#technologies-used)
+- [Installation and Running](#installation-and-running)
+- [Components](#components)
+  - [EmployeeMenu](#employeemenu)
+  - [ManagerMenu](#managermenu)
+  - [LoginForm](#loginform)
+- [Backend Logic](#backend-logic)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Introduction
-The **Time Tracker** application provides a way for employees and managers to track time. With a simple Command Line Interface (CLI), the program allows users to clock in/out and view timesheets.
+Employee Time Tracker is a sophisticated web application crafted to enable employees to accurately clock in/out, while providing managerial staff the capabilities to manage employees, view their timesheets, and administer overall attendance.
 
 ## Features
 
 ### Employee Operations
-- Clock in and out
-- Clock in and out for lunch
+- **Clock In/Out:** Allows employees to record their working hours.
+- **Clock In/Out for Lunch:** Enables employees to clock in/out for their lunch break.
 
 ### Manager Operations
-- View employees list
-- View timesheets
-- Add a new employee
-- Remove an existing employee
+- **View Employee List:** Provides a comprehensive list of all employees.
+- **View Timesheets of Employees:** Enables viewing of detailed timesheets of each employee.
+- **Add/Remove Employees:** Provides functionalities to add new employees or remove existing ones.
+
+## Technologies Used
+- **React:** For building the user interface.
+- **Node.js:** Backend server environment.
+- **Express:** Web framework used in conjunction with Node.js.
+- **axios:** For making HTTP requests.
+- **react-router-dom:** For routing and navigation within the application.
 
 ## Installation and Running
+```sh
+# Clone this repository
+$ git clone <repository-url>
 
-1. **Prerequisites**: Make sure Node.js is installed.
-2. **Clone Repository**: Clone the repository and navigate to the project folder.
-3. **Install Dependencies**: Run `npm install`.
-4. **Run Program**: Use `node index.js` to start the program.
+# Go into the repository
+$ cd employee-timetracker
 
-## Classes
+# Install dependencies for the server
+$ cd server && npm install
 
-### `EmployeeTimeTracker`
+# Install dependencies for the client
+$ cd ../client && npm install
 
-#### Methods
+# Run the app
+$ npm start
 
-- `getEmployee(employeeId: string)`: Fetches employee data by ID.
-- `addEmployee(id: string, name: string, role: string)`: Adds a new employee.
-- `removeEmployee(employeeId: string)`: Removes an employee.
-- `clockIn(employeeId: string)`: Clocks in an employee.
-- `clockOut(employeeId: string)`: Clocks out an employee.
-- `clockInForLunch(employeeId: string)`: Clocks in an employee for lunch.
-- `clockOutForLunch(employeeId: string)`: Clocks out an employee from lunch.
+## Components
 
-### `CLI`
+### EmployeeMenu
+A dedicated component that offers functionalities and operations that an employee can perform, such as clocking in/out and managing lunch breaks.
 
-#### Methods
+### ManagerMenu
+This component is designed to provide managers with a dedicated interface, allowing them to perform various administrative operations such as viewing employee lists and timesheets.
 
-- `start()`: Entry point for CLI.
-- `employeeMenu(employee: object)`: Shows the employee menu.
-- `managerMenu(manager: object)`: Shows the manager menu.
-- `clockIn(employee: object)`: Executes clock-in for an employee.
-- `clockOut(employee: object)`: Executes clock-out for an employee.
+### LoginForm
+This interactive component facilitates users in logging into the application by entering their employee ID and selecting their role.
 
-## How to Use
+## Backend Logic
+The backend logic for managing employees, their timesheets, and performing various operations is handled by the EmployeeTimeTracker class in the server directory. This class contains methods to manage employees, their clock-in/out times, and timesheets.
 
-### For Employees
-1. Run the program.
-2. Enter your employee ID.
-3. Choose from the available options to clock in/out.
+## Usage
+Login: Start by navigating to the login page and enter your employee ID. Select your role and proceed.
+Navigate: Use the rendered menu to navigate through different options and perform various operations available to your role.
 
-### For Managers
-1. Run the program.
-2. Enter your manager ID.
-3. Use the manager menu to view employees, timesheets, or modify employee data.
+## Contributing
+We welcome contributions! Please feel free to submit a pull request for minor improvements or bug fixes. For major changes or new features, open an issue first to discuss the proposed change.
+
+## License
+MIT
